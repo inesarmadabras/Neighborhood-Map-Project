@@ -385,7 +385,7 @@ function initMap() {
 // Get Google Maps script or fail gracefully with error message and page reload link
 
 var map_url =
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyDCDm6-E4pK_fRcLMpRYEMnnaPKXYjl7aw";
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAuZC_cVOM-k0J3DrvKrfBZuc9MH7sfyko";
 
 $.getScript(map_url)
     .done(function () {
