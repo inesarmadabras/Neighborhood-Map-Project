@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Udacity Nanodegree - Neighborhood Map Project</title>
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="lib/mdl/material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div id="error_msg">Error message</div>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+            <div class="mdl-layout__drawer mdl-cell--3-col">
+                <h1 class="mdl-layout-title title">Cool Places @ <br> Lisbon / Margem Sul</h1>
+                <div class="mdl-grid">
+                    <form action="#" class="mdl-cell mdl-cell--6-col mdl-cell--1-offset">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="search" data-bind="textInput: filter">
+                            <label class="mdl-textfield__label" for="search">Search</label>
+                        </div>
+                    </form>
+                </div>
+                <nav class="mdl-navigation" data-bind="foreach: filteredNav">
+                    <a class="mdl-navigation__link" data-bind="text: $data.name, attr: { id: 'link' + $index() }, click: $parent.clickListItem"></a>
+                </nav>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script src="lib/knockout-3.4.0.js"></script>
+        <script async src="lib/jquery-3.1.1.min.js"></script>
+        <script async src="js/app.min.js"></script>
+    </body>
+</html>
+
