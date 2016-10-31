@@ -1,10 +1,20 @@
 # Neighborhood Map Project
 
-The goal of this project is to develop a single-page application featuring a map of a neighborhood. This map includes highlighted locations, third-party data about those locations and various ways to browse the content.
+The goal of this project is to develop a single-page application featuring a map of a neighborhood (In my case, Lisbon & Margem Sul)
 
-## Instructions
+## What I'll see?
+* This project is built using Google Maps API, Google Street View Image API and knockoutjs framework. Features Include:
+* A full-screen map to page using the Google Maps API.
+* A Street View Image of the location
+* Map markers identifying a number of favorite locations in Lisbon & Margem Sul
+* List view of the identified locations.
+    
+## How to run?
 
-1. Clone this repository.
-1. Open index.html in a browser.
-1. Use the filter box to filter list items and map markers.
-1. Click a list item to move to the corresponding map marker and view relevant Flickr images from that location.
+1. Open https://inesarmadabras.github.io/Neighborhood-Map-Project/
+1. Use the filter box to filter list items.
+1. Click a list item to move to the corresponding map marker and view more info.
+
+
+    
+
