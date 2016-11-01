@@ -26,6 +26,11 @@
                 </nav>
             </div>
             <div id="map"></div>
+                <div id="images" data-bind="foreach: srcs">
+            <!-- ko foreach: photos.photo -->
+                <img data-bind="attr: { src: 'http://farm' + farm + '.static.flickr.com/' + server + '/' + id + '_' + secret + '_m.jpg'}">
+      <!-- /ko -->
+    </div>
         </div>
         <script src="lib/knockout-3.4.0.js"></script>
         <script async src="lib/jquery-3.1.1.min.js"></script>
