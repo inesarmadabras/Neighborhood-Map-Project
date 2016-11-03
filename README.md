@@ -16,6 +16,7 @@ The goal of this project is to develop a single-page application featuring a map
 1. Use the filter box to filter list items.
 1. Click a list item to move to the corresponding map marker and view more info.
 
-
+## Question to the revisor:
+This is my last project and my nanodegree subscription ends on 5 November. If, after you review my project, I've some corrections to do and do the resubmission on 4/5 November, I'll lose my whole progress anyway? :(
     
 
