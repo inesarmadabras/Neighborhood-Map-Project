@@ -65,7 +65,7 @@ mapError = () => {
 
 `l.121` (5) getJSON() and srcs(data) repeated calls have been removed. Now at only at the setLocationInfo function (`l.310`)
 
-`l.56´ and `l.281´ (7) Need Help at this part! How can I filter the markers? What I've done: When a marker is clicked, it's the only one visible (this part is commented)
+`l.56´ and `l.281` (7) Need Help at this part! How can I filter the markers? What I've done: When a marker is clicked, it's the only one visible (this part is commented)
 
 
 ## Question to the revisor:
