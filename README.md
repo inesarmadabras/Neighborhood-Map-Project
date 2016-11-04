@@ -13,16 +13,16 @@ The goal of this project is to develop a single-page application featuring a map
 ## How to run?
 
 Desktop:
-1.1 Open [inesarmadabras.github.io/Neighborhood-Map-Project/](https://inesarmadabras.github.io/Neighborhood-Map-Project/) 
+* Open [inesarmadabras.github.io/Neighborhood-Map-Project/](https://inesarmadabras.github.io/Neighborhood-Map-Project/) 
 or
-1.2 Download the repo. Just launch index.html.
-2. Use the filter box to filter list items.
-3. Click a list item to move to the corresponding map marker and view more info.
+* Download the repo. Just launch index.html.
+* Use the filter box to filter list items.
+* Click a list item to move to the corresponding map marker and view more info.
 
 Mobile:
-1. Open [inesarmadabras.github.io/Neighborhood-Map-Project/](https://inesarmadabras.github.io/Neighborhood-Map-Project/) 
-2. Click on the button at the left top corner to see the menu (search and list of localizations)
-3. Click a list item to move to the corresponding map marker and view more info
+* Open [inesarmadabras.github.io/Neighborhood-Map-Project/](https://inesarmadabras.github.io/Neighborhood-Map-Project/) 
+* Click on the button at the left top corner to see the menu (search and list of localizations)
+* Click a list item to move to the corresponding map marker and view more info
 
 
 
