@@ -18,13 +18,14 @@ or
 2. Use the filter box to filter list items.
 3. Click a list item to move to the corresponding map marker and view more info.
 
-## Resubmission Updates
+# Resubmission Updates
 
 ### index.html - Sugestions
 `l.6` (1) Added theme-color
-        <meta name="theme-color" content="#0066FF">
+        `<meta name="theme-color" content="#0066FF">`
+        
 `l.9` (2) Added favicon
-        <link rel="icon" sizes="150x150" href="icon.png">
+        `<link rel="icon" sizes="150x150" href="icon.png">`
 
 `l.12` (3) App is usable on small screen devices. Now you can see a menu button at the corner (only at mobile view)
         
@@ -37,6 +38,7 @@ or
 `All` (4) More HTML semantic tags.Indentation.
 
 `l.47` (5) All scripts are now at the bottom of the HTML body for Page Speed Optimization
+
 `l.53` (7) Moved GoogleMaps API request from app.js to index.html. Request Google Map API using async.
 
 ### index.html - Required
@@ -44,8 +46,11 @@ or
 
 ### app.js - Sugestions
 `l.1` (1) API keys are now at the top of the file
+
 `All` (2) single-quotes (') over double-quotes (")
+
 `l.7` (3) added new locations.
+
 `l.121` (6) Now I don't use JS to request Google Map API. Example send by the last revisor: [Example](http://codepen.io/NKiD/pen/XNrYXa)
 
 ``` javascript
