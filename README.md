@@ -33,7 +33,8 @@ Mobile:
         `<meta name="theme-color" content="#0066FF">`
         
 `l.9` (2) Added favicon
-        `<link rel="icon" sizes="150x150" href="icon.png">`
+        `<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">`
+        `<link rel="icon" href="/favicon.ico" type="image/x-icon">`
 
 `l.12` (3) App is usable on small screen devices. Now you can see a menu button at the corner (only at mobile view)
         
