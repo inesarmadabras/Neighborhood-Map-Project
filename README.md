@@ -12,11 +12,19 @@ The goal of this project is to develop a single-page application featuring a map
 
 ## How to run?
 
+Desktop:
 1.1 Open [inesarmadabras.github.io/Neighborhood-Map-Project/](https://inesarmadabras.github.io/Neighborhood-Map-Project/) 
 or
 1.2 Download the repo. Just launch index.html.
 2. Use the filter box to filter list items.
 3. Click a list item to move to the corresponding map marker and view more info.
+
+Mobile:
+1. Open [inesarmadabras.github.io/Neighborhood-Map-Project/](https://inesarmadabras.github.io/Neighborhood-Map-Project/) 
+2. Click on the button at the left top corner to see the menu (search and list of localizations)
+3. Click a list item to move to the corresponding map marker and view more info
+
+
 
 # Resubmission Updates
 
@@ -34,6 +42,7 @@ or
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 ```
+![Mobile View](https://s13.postimg.org/ujijw2e1z/mobile1.png)
 
 `All` (4) More HTML semantic tags.Indentation.
 
