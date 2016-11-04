@@ -3,20 +3,27 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        <!-- (1) Resubmission - Added theme-color -->
+        <meta name="theme-color" content="#0066FF">
         <title>Udacity Nanodegree - Neighborhood Map Project - Ines Armada Bras</title>
+        <!-- (2) Resubmission - Added favicon -->
+        <link rel="icon" sizes="150x150" href="icon.png">
         <link rel="stylesheet" href="css/style.min.css">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+        <!-- (3) Resubmission - App is usable on small screen devices -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        
-        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+
     </head>
+    <!-- (4) Resubmission - More HTML semantic tags. Indentation -->
     <body>
-        <div id="error_msg">Error message</div>
+
+        <article id="error_msg">Error message</article>
+
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-            <div class="mdl-layout__drawer mdl-cell--3-col">
+            <div class="mdl-layout__drawer mdl-cell--2-col">
                 <h1 class="mdl-layout-title title">Cool Places @ <br> Lisbon / Margem Sul</h1>
                 <div class="mdl-grid">
-                    <form action="#" class="mdl-cell mdl-cell--6-col mdl-cell--1-offset">
+                    <form action="#" class="mdl-cell mdl-cell--2-col mdl-cell--1-offset">
                         <div class="mdl-textfield mdl-js-textfield">
                             <input class="mdl-textfield__input" type="text" id="search" data-bind="textInput: filter">
                             <label class="mdl-textfield__label" for="search">Search</label>
@@ -27,16 +34,27 @@
                     <a class="mdl-navigation__link" data-bind="text: $data.name, attr: { id: 'link' + $index() }, click: $parent.clickListItem"></a>
                 </nav>
             </div>
-            <div id="map"></div>
-                <div id="images" data-bind="foreach: srcs">
-            <!-- ko foreach: photos.photo -->
+
+            <article id="map"></article>
+
+            <article class="flickrimg" id="images" data-bind="foreach: srcs">
+                <!-- ko foreach: photos.photo -->
                 <img data-bind="attr: { src: 'http://farm' + farm + '.static.flickr.com/' + server + '/' + id + '_' + secret + '_m.jpg'}">
-      <!-- /ko -->
-    </div>
+                <!-- /ko -->
+            </article>
+
         </div>
+        <!-- (5) Resubmission - All scripts are now at the bottom of the HTML body for Page Speed Optimization. -->
+        <!-- (6) Resubmission - Async atribute removed -->
         <script src="lib/knockout-3.4.0.js"></script>
-        <script async src="lib/jquery-3.1.1.min.js"></script>
-        <script async src="js/app.min.js"></script>
+        <script src="lib/jquery-3.1.1.min.js"></script>
+        <script src="js/app.min.js"></script>
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <!-- (7) Resubmission - Moved GoogleMaps API request from app.js to index.html. Request Google Map API using async -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuZC_cVOM-k0J3DrvKrfBZuc9MH7sfyko&callback=initMap"
+                async defer onerror="mapError()"></script>
+
     </body>
+
 </html>
 
