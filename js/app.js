@@ -282,8 +282,7 @@ initMap = () => {
     }
 
     var closeAllInfoWindows = function() {
-        var i = 0;
-        for (i; i < vm.locations.length; ++i) {
+        for (var i = 0; i < vm.locations.length; ++i) {
             vm.infowindow_array[i].close();
         }
     };
@@ -302,8 +301,7 @@ initMap = () => {
         // 1. Open infowindow when clicking marker
         // 2. Set latitude and longitude for Flickr API call
         // 3. Animate marker on click
-        var i = 0;
-        for (i; i < vm.locations.length; i++) {
+        for (var i = 0; i < vm.locations.length; i++) {
             //(7) Resubmission - When a marker is clicked, it's the only one visible
               // vm.location_array()[i].setVisible(true); /*7.1 uncoment this line */
 
@@ -345,8 +343,7 @@ initMap = () => {
 
         };
 
-        var i = 0;
-        for (i; i < vm.locations.length; i++) {
+        for (var i = 0; i < vm.locations.length; i++) {
             //initialize markers
 
             vm.location_array()[i] = new google.maps.Marker({
