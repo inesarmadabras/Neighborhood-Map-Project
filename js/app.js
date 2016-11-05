@@ -55,7 +55,9 @@ var ViewModel = function() {
     // Show nav and filter
     //(7) Resubmission  - Need Help at this part! How can I filter the markers?
     self.filteredNav = ko.computed(function() {
-        var filter = self.filter().toLowerCase();
+
+     var filter = self.filter().toLowerCase();
+
         if (!filter) {
             return self.nav();
         }
@@ -67,7 +69,29 @@ var ViewModel = function() {
         });
     });
 
-    // Highlight active list item when clicking list item or marker
+    //ALTERNATIVE
+    /*  self.filteredNav = ko.computed(function() {
+
+     var filter = self.filter().toLowerCase();
+
+        if (!filter) {
+            for (var i = 0; i < location_array()[i].length; i++) {
+
+                location_array()[i].setVisible(true);
+            }
+            return self.nav();
+        }
+        return self.nav().filter(function(i) {
+            // Check for proper casing or lowercase
+             var match = i.name.toLowerCase().indexOf(filter) > -1 || i.name.indexOf(filter) > -1;
+             location_array()[i].setVisible(match);
+            return match;
+
+
+        });
+    });*/
+
+        // Highlight active list item when clicking list item or marker
     self.highlightListItem = function(obj) {
         // console.log(this.locations[0].name);
         // Set location name depending on argument passed:
@@ -279,17 +303,17 @@ initMap = () => {
         var i = 0;
         for (i; i < vm.locations.length; i++) {
             //(7) Resubmission - When a marker is clicked, it's the only one visible
-              // vm.location_array[i].setVisible(true); /*7.1 uncoment this line */
+              // vm.location_array()[i].setVisible(true); /*7.1 uncoment this line */
 
             if (vm.locations[i].name === name) {
-                vm.infowindow_array[i].open(map, vm.location_array[i]);
+                vm.infowindow_array[i].open(map, vm.location_array()[i]);
                 vm.lat(vm.locations[i].lat);
                 vm.lon(vm.locations[i].lng);
-                toggleBounce(vm.location_array[i]);
+                toggleBounce(vm.location_array()[i]);
             }
             /*7.2 uncomment the next segment */
             /*else {
-             vm.location_array[i].setVisible(false);
+             vm.location_array()[i].setVisible(false);
             }*/
         }
 
@@ -323,7 +347,7 @@ initMap = () => {
         for (i; i < vm.locations.length; i++) {
             //initialize markers
 
-            vm.location_array[i] = new google.maps.Marker({
+            vm.location_array()[i] = new google.maps.Marker({
                 map: map,
                 position: {
                     lat: vm.locations[i].lat,
@@ -346,7 +370,7 @@ initMap = () => {
             });
 
             // Add event listeners to handle info display on marker click
-            vm.location_array[i].addListener('click', clickMarker);
+            vm.location_array()[i].addListener('click', clickMarker);
 
 
         }
